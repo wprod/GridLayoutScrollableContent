@@ -79,6 +79,10 @@ a:focus {
 
 main {
 	position: relative;
+	background: url("../img/home.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 15rem 0;
 }
 
 .frame {
@@ -90,20 +94,80 @@ main {
 	color: #4c33f7;
 }
 
-/* Header */
+/* contact */
+.contact {
+	position: fixed;
+    z-index: 99;
+    right: 0;
+    top: 0;
+    padding: .8rem 1.5rem;
+    background: white;
+    margin: 0;
+    border-radius: 0 0 0 1rem;
+    box-shadow: 1rem 0rem 2rem -1rem grey;
+	display: flex;
+	align-items: center;    background: #f1f1f1;
+}
 
+.contact b {
+	margin: 0 .5rem;
+}
 
+.contact__icon {
+	margin-right: 1rem;
+	color: green;
+}
+
+@media (max-width: 1000px) {
+	.contact {
+		flex-direction: column;
+	}
+
+	.contact b {
+		margin: .25rem;
+	}
+
+	.contact__icon {
+		margin: .5rem;
+
+	}
+}
+
+/* header */
 .grid-wrap,
-.title-wrap {
+.title-wrap,
+.footer-wrap {
 	position: relative;
 	max-width: 1100px;
 	margin: 0 auto;
-	padding: 6rem 1rem 0;
+	padding: 0 1rem 0;
+}
+
+.title-wrap {
+	background: white;
+	border-radius: 1rem 1rem 0 0;
+	padding: 2rem;
+}
+
+.footer-wrap {
+	background: white;
+	border-radius: 0 0 1rem 1rem;
+	padding: 2rem;
+}
+
+.grid-wrap {
+	background: white;
+}
+
+.title-wrap__title {
+	margin: 0;
 }
 
 .title-wrap__contact {
 	text-align: center;
 	font-weight: bold;
+	margin: 0;
+	padding: 0 2rem;
 }
 
 
